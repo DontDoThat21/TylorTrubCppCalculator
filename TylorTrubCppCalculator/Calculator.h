@@ -14,6 +14,7 @@ namespace TylorTrubCppCalculator {
 	/// </summary>
 	public ref class Calculator : public System::Windows::Forms::Form
 	{
+
 	public:
 		Calculator(void)
 		{
@@ -192,16 +193,28 @@ namespace TylorTrubCppCalculator {
 		}
 #pragma endregion
 	private: System::Void btnAddition_Click(System::Object^ sender, System::EventArgs^ e) {
+		lblOperator->Text = "+";
+		double result = System::Convert::ToDouble(txtParam1->Text) + System::Convert::ToDouble(txtParam2->Text);
+		lblResult->Text = "= " + result.ToString();
 	}
 
 	private: System::Void btnSubtraction_Click(System::Object^ sender, System::EventArgs^ e) {
+		lblOperator->Text = "-";
+		double result = System::Convert::ToDouble(txtParam1->Text) - System::Convert::ToDouble(txtParam2->Text);
+		lblResult->Text = "= " + result.ToString();
 	}
 
 
 	private: System::Void btnMultiplication_Click(System::Object^ sender, System::EventArgs^ e) {
+		lblOperator->Text = "X";
+		double result = System::Convert::ToDouble(txtParam1->Text) * System::Convert::ToDouble(txtParam2->Text);
+		lblResult->Text = "= " + result.ToString();
 	}
 
 	private: System::Void btnDivision_Click(System::Object^ sender, System::EventArgs^ e) {
+		lblOperator->Text = "/";
+		double result = System::Convert::ToDouble(txtParam1->Text) / System::Convert::ToDouble(txtParam2->Text);
+		lblResult->Text = "= " + result.ToString();
 	}
 };
 }
