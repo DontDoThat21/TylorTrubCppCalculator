@@ -141,6 +141,7 @@ namespace TylorTrubCppCalculator {
 			this->btnSubtraction->TabIndex = 6;
 			this->btnSubtraction->Text = L"-";
 			this->btnSubtraction->UseVisualStyleBackColor = true;
+			this->btnSubtraction->Click += gcnew System::EventHandler(this, &Calculator::btnSubtraction_Click);
 			// 
 			// btnMultiplication
 			// 
@@ -152,6 +153,7 @@ namespace TylorTrubCppCalculator {
 			this->btnMultiplication->TabIndex = 7;
 			this->btnMultiplication->Text = L"X";
 			this->btnMultiplication->UseVisualStyleBackColor = true;
+			this->btnMultiplication->Click += gcnew System::EventHandler(this, &Calculator::btnMultiplication_Click);
 			// 
 			// btnDivision
 			// 
@@ -163,6 +165,7 @@ namespace TylorTrubCppCalculator {
 			this->btnDivision->TabIndex = 8;
 			this->btnDivision->Text = L"/";
 			this->btnDivision->UseVisualStyleBackColor = true;
+			this->btnDivision->Click += gcnew System::EventHandler(this, &Calculator::btnDivision_Click);
 			// 
 			// Calculator
 			// 
@@ -189,6 +192,16 @@ namespace TylorTrubCppCalculator {
 		}
 #pragma endregion
 	private: System::Void btnAddition_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	private: System::Void btnSubtraction_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+
+	private: System::Void btnMultiplication_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+
+	private: System::Void btnDivision_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
 };
 }
